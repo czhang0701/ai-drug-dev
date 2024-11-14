@@ -1,0 +1,186 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+header {
+    background: linear-gradient(135deg, #0046bd, #00a6ed);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.company-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+.company-card h2 {
+    color: #0046bd;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+}
+
+.company-card h3 {
+    color: #2c5282;
+    margin-top: 1.5rem;
+}
+
+.company-info {
+    margin-bottom: 1.5rem;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.stat-box {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-box strong {
+    display: block;
+    color: #0046bd;
+    font-size: 1.2rem;
+}
+
+.pipeline-section {
+    margin: 1.5rem 0;
+}
+
+.pipeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pipeline-item {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+}
+
+.tech-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.tech-feature {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+}
+
+.partnership-list {
+    list-style: none;
+    padding: 0;
+}
+
+.partnership-list li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+footer {
+    background: #1a365d;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: #cbd5e0;
+    margin-top: 1rem;
+}
+
+.highlight-box {
+    background: #ebf8ff;
+    border-left: 4px solid #0046bd;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.market-position {
+    background: #f0fff4;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .quick-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    border: 1px solid #e1e4e8;
+    text-align: left;
+}
+
+.comparison-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+}
+
+.comparison-table tr:nth-child(even) {
+    background: #f8fafc;
+}
